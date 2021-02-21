@@ -1,0 +1,20 @@
+.aside-filter {
+    width: 368px;
+    &-item {
+        &-title {
+            font-weight: 600;
+            font-size: 24px;
+            margin-bottom: 23px;
+        }
+        &-content {
+            margin-bottom: 25px;
+            &-box {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    & label {
+        font-size: 20px;
+    }
+}
+

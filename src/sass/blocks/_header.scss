@@ -1,0 +1,117 @@
+.header {
+    &__humburger {
+        position: absolute;
+        top: 55px;
+        left: 27px;
+        &  > span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: #1D1D1D;
+            margin-bottom: 3px;
+        }
+    }
+    &__top-inner {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 110px;
+        
+    }
+    &__box {
+        display: flex;
+        width: 50%;
+    }
+    &__users {
+        position: relative;
+        margin-left: 49px;
+        font-size: 24px;
+        line-height: 40px;
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../icons/down.svg);
+            width: 20px;
+            height: 11px;
+            top: 17px;
+            right: -40px;
+        }
+    }
+    &__contact-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+    }
+    &__work-day,
+    &__weekends {
+        position: relative;
+        margin: 0 0 23px 27px;
+    }
+    &__weekends {
+        margin-bottom: 0;
+    }
+    &__work-day span,
+    &__weekends span {
+        color: #ABABAB;
+    }
+    &__work-day::before,
+    &__weekends::before {
+        content: '';
+        position: absolute;
+        background-image: url(../icons/time.svg);
+        width: 20px;
+        height: 20px;
+        margin-left: -24px;
+    }
+    &__phones {
+        font-size: 24px;
+    }
+    &__phone {
+        display: block;
+        margin: 10px 0 15px;
+    }
+    &__phone::before {
+        content: '';
+        position: absolute;
+        background-image: url(../icons/phone.svg);
+        width: 20px;
+        height: 20px;
+        margin-left: -30px;
+        margin-top: 5px;;
+    }
+    &__navigation {
+        width: 270px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__lang {
+        font-size: 24px;
+    }
+}
+
+.user-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 157px;
+}
+
+.menu {
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    padding: 19px 0;
+    &__list {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    &__item {
+        margin: 0 100px;
+    }
+    &__link {
+        text-transform: uppercase;
+    }
+}

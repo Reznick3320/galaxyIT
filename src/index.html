@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__humburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__top-inner">
+                    <div class="header__box">
+                        <a class="logo" href="#">
+                            <img class="logo__img" src="icons/logo.png" alt="logo">
+                        </a>
+                        <p class="header__users">Клиентам</p>
+                    </div>
+                    <div class="header__contact-inner">
+                        <div class="header__work_time">
+                            <p class="header__work-day"><span>Робочие дни:</span> Пн-Пт с 9.00 - 18.00</p>
+                            <p class="header__weekends"><span>Выходные:</span> Сб-Вс</p>
+                        </div>
+                        <div class="header__phones">
+                            <a class="header__phone" href="tel:+380983454345">+38(098) 34-54-345</a>
+                            <a class="header__phone" href="tel:+380983454345">+38(098) 34-54-345</a>
+                        </div>
+                        <div class="header__navigation">
+                            <div class="header__lang">
+                                <p class="header__lang-text">РУС</p>
+                            </div>
+                            <ul class="user-list">
+                                <div class="user-list__item">
+                                    <a class="user-list__link" href="#">
+                                        <img src="icons/zoom.svg" alt="zoom">
+                                    </a>
+                                </div>
+                                <div class="user-list__item">
+                                    <a class="user-list__link" href="#">
+                                        <img src="icons/user.svg" alt="user">
+                                    </a>
+                                </div>
+                                <div class="user-list__item">
+                                    <a class="user-list__link" href="#">
+                                        <img src="icons/basket.svg" alt="basket">
+                                    </a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Женская одежда</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Мужская одежда</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Детская одежда</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Для дома</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#">Мужская одежда</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#">Мужские футболки</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__wrapper">
+                <aside class="aside-filter">
+                    <form class="aside-filter__form">
+                        <ul class="aside-filter__list">
+                            <li class="aside-filter__item-drop">
+                                <p class="aside-filter-item-title">Категории</p>
+                                <div class="aside-filter-item-content">
+                                </div>
+                            </li>
+                            <li class="aside-filter__item-drop">
+                                <p class="aside-filter-item-title">Цена:</p>
+                                <div class="aside-filter-item-content">
+                                </div>
+                            </li>
+                            <li class="aside-filter__item-drop">
+                                <p class="aside-filter-item-title">Материал:</p>
+                                <div class="aside-filter-item-content">
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Лен
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Хлопок
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Вискоза
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Кулир
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Лакосте
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Микролакоста
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="aside-filter__item-drop">
+                                <p class="aside-filter-item-title">Цвет:</p>
+                                <div class="aside-filter-item-content">
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Черный
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Белый
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Серый
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Красный
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Синий
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="aside-filter__item-drop">
+                                <p class="aside-filter-item-title">Размер:</p>
+                                <div class="aside-filter-item-content">
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            S
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            M
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            L
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            XL
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            2XL
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            XXL
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="aside-filter__item-drop">
+                                <p class="aside-filter-item-title">Бренд:</p>
+                                <div class="aside-filter-item-content">
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Donella
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Ezgi
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Fazo-R
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Tengulu 
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Glo-Story
+                                        </label>
+                                    </div>
+                                    <div class="aside-filter-item-content-box">
+                                        <label>
+                                            <input type="checkbox" class='filter-style'>
+                                            Ceylanoglu
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </aside>
+                <div class="catalog__list">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__top-inner">
+                    <div class="footer__delivery">
+                        <h2 class="footer__subtitle">УСЛОВИЯ ДОСТАВКИ</h2>
+                        <p class="footer__descr">Обработка заказов:</p>
+                        <p class="footer__descrip footer__margin-bottom">3 рабочих дня</p>
+                        <p class="footer__descr"> Отправка заказов:</p>
+                        <ul class="footer__delivery-order">
+                            <li class="footer__order-item footer__descrip"><span>курьерскими службами</span><br> Вторник, Среда, Четверг, Пятница, <br>Суббота в 11.00</li>
+                            <li class="footer__order-item footer__descrip"><span>укрпочтой</span> Вторник, Пятница в 09.00</li>
+                        </ul>
+                    </div>
+                    <div class="footer__work">
+                        <h2 class="footer__subtitle">ГРАФИК РОБОТИ</h2>
+                        <p class="footer__work-subtitle footer__descr">Рабочие дни:</p>
+                        <p class="footer__descrip footer__margin-bottom">Понедельник- Пятница с 9.00 до<br> 18.00<br> (перерыв с 13.00 до 14.00)</p>
+                        <p class="footer__descr">Выходной:</p>
+                        <p class="footer__descrip">Суббота Воскресенье</p>
+                    </div>
+                    <div class="footer__about">
+                        <h2 class="footer__subtitle">О НАС</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link  footer__descrip" href="#">О компании</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link  footer__descrip" href="#">Контакты</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link  footer__descrip" href="#">Таблица размеров</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link  footer__descrip" href="#">Помощь</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__purchase">
+                        <h2 class="footer__subtitle">УСЛОВИЯ ПОКУПОК</h2>
+                        <div class="footer__purchase-descr footer__descrip">Оплата и доставка по Украине<br> Международная доставка и оплата</div>
+                    </div>
+                    <div class="footer__buyers">
+                        <h2 class="footer__subtitle">ОПТОВЫМ ПОКУПАТЕЛЯМ</h2>
+                        <a href="#" class="footer__buyers-descr footer__descrip">Условия сотрудничества</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>

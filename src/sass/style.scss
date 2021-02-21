@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+    max-width: 1920px;
+
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4 ,h5, h6 {
+    margin: 0;
+
+}
+
+body {
+    color:#1D1D1D;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/breadcrumbs';
+@import 'blocks/catalog';
+@import 'blocks/footer';
